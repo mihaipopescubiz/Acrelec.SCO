@@ -77,7 +77,7 @@ namespace Acrelec.SCO.Core
 
         private static string GetItemCode(string name)
         {
-            return posItems.FirstOrDefault(item => item.Name.ToLower() == name.ToLower())?.Name ?? string.Empty;
+            return posItems.FirstOrDefault(item => item.Name.ToLower() == name.ToLower())?.ItemCode ?? string.Empty;
         }
 
         private static void AddOrderItem(Order order, string itemName, int quantity)
